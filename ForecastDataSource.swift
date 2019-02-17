@@ -58,7 +58,7 @@ class ForecastDataSource: NSObject, UITableViewDataSource {
     func extractDayForecast(forecast: Forecast, requiredDate: Date) -> [ForecastFraction] {
         let fractions = forecast.list.filter { (fraction) -> Bool in
             //Determine the fraction datetime lies within the request day
-            return fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 > 0 && fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 < self.oneDayInHours
+            return fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 > 0 && fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 <= self.oneDayInHours
         }
         return fractions
     }
