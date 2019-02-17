@@ -26,7 +26,7 @@ class ForecastDayDataSource: NSObject, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "forecast-fraction-cell", for: indexPath) as? ForecastDayCollectionViewCell {
-            cell.applyIcon(fraction: self.forecastFractions[indexPath.row])
+            cell.applyWeatherFraction(fraction: self.forecastFractions[indexPath.row])
             return cell
         }
         return UICollectionViewCell()

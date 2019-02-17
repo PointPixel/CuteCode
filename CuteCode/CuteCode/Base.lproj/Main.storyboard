@@ -194,48 +194,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2jo-oB-cl2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2jo-oB-cl2">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="simple-weather-cell" rowHeight="60" id="Gwa-t8-PAD" customClass="ForecastDateTableViewCell" customModule="CuteCode" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="simple-weather-cell" rowHeight="90" id="Gwa-t8-PAD" customClass="ForecastDateTableViewCell" customModule="CuteCode" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gwa-t8-PAD" id="vDF-ht-JF7">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="g2o-Eh-JtF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VCv-Ez-2CQ">
-                                                        <size key="itemSize" width="60" height="60"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VCv-Ez-2CQ">
+                                                        <size key="itemSize" width="90" height="90"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="forecast-fraction-cell" id="SGp-DB-o7I" customClass="ForecastDayCollectionViewCell" customModule="CuteCode" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="-0.5" width="60" height="60"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="89.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="89.5"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfs-Ht-daK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="15"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYl-7f-toj">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                        <rect key="frame" x="15" y="15" width="60" height="59.5"/>
                                                                     </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27˚C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="je6-Ge-YJN">
+                                                                        <rect key="frame" x="0.0" y="73.5" width="90" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                 </subviews>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstAttribute="trailing" secondItem="aYl-7f-toj" secondAttribute="trailing" id="3Su-so-NmG"/>
-                                                                <constraint firstItem="aYl-7f-toj" firstAttribute="leading" secondItem="SGp-DB-o7I" secondAttribute="leading" id="3uN-9R-yDG"/>
-                                                                <constraint firstItem="aYl-7f-toj" firstAttribute="top" secondItem="SGp-DB-o7I" secondAttribute="top" id="ba4-fT-QVw"/>
-                                                                <constraint firstAttribute="bottom" secondItem="aYl-7f-toj" secondAttribute="bottom" id="qWQ-DC-D6t"/>
+                                                                <constraint firstAttribute="trailing" secondItem="aYl-7f-toj" secondAttribute="trailing" constant="15" id="3Su-so-NmG"/>
+                                                                <constraint firstItem="aYl-7f-toj" firstAttribute="leading" secondItem="SGp-DB-o7I" secondAttribute="leading" constant="15" id="3uN-9R-yDG"/>
+                                                                <constraint firstAttribute="trailing" secondItem="qfs-Ht-daK" secondAttribute="trailing" id="A3O-Mn-eLY"/>
+                                                                <constraint firstItem="je6-Ge-YJN" firstAttribute="leading" secondItem="SGp-DB-o7I" secondAttribute="leading" id="L7j-Vt-r30"/>
+                                                                <constraint firstItem="aYl-7f-toj" firstAttribute="top" secondItem="qfs-Ht-daK" secondAttribute="bottom" id="Oea-WT-VXx"/>
+                                                                <constraint firstItem="aYl-7f-toj" firstAttribute="top" secondItem="SGp-DB-o7I" secondAttribute="top" constant="15" id="ba4-fT-QVw"/>
+                                                                <constraint firstAttribute="trailing" secondItem="je6-Ge-YJN" secondAttribute="trailing" id="jcX-02-1lg"/>
+                                                                <constraint firstAttribute="bottom" secondItem="je6-Ge-YJN" secondAttribute="bottom" id="nUM-Ft-jUX"/>
+                                                                <constraint firstAttribute="bottom" secondItem="aYl-7f-toj" secondAttribute="bottom" constant="15" id="qWQ-DC-D6t"/>
+                                                                <constraint firstItem="qfs-Ht-daK" firstAttribute="top" secondItem="SGp-DB-o7I" secondAttribute="top" id="snU-5t-buw"/>
+                                                                <constraint firstItem="qfs-Ht-daK" firstAttribute="leading" secondItem="SGp-DB-o7I" secondAttribute="leading" id="ziz-LK-yvl"/>
                                                             </constraints>
-                                                            <size key="customSize" width="60" height="60"/>
+                                                            <size key="customSize" width="90" height="89.5"/>
                                                             <connections>
                                                                 <outlet property="imageView" destination="aYl-7f-toj" id="gXN-SD-Sv8"/>
+                                                                <outlet property="tempLabel" destination="je6-Ge-YJN" id="Xma-bQ-Udf"/>
+                                                                <outlet property="timeLabel" destination="qfs-Ht-daK" id="9Dx-ZR-eZk"/>
                                                             </connections>
                                                         </collectionViewCell>
                                                     </cells>

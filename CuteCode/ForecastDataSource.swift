@@ -22,6 +22,7 @@ class ForecastDataSource: NSObject, UITableViewDataSource {
     var forecastDates: [Date]?
     var forecast: Forecast?
     var updateTarget: ForecastDataSourceUpdateable?
+    private let oneDayInHours: TimeInterval = 86400.0
     
     // MARK: Data loading
     func populateData() {
@@ -56,8 +57,8 @@ class ForecastDataSource: NSObject, UITableViewDataSource {
     /// Extracts the forecast fractions for requested date
     func extractDayForecast(forecast: Forecast, requiredDate: Date) -> [ForecastFraction] {
         let fractions = forecast.list.filter { (fraction) -> Bool in
-            //Ignore the time
-            return fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 > 0 && fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 < 86400
+            //Determine the fraction datetime lies within the request day
+            return fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 > 0 && fraction.forecastDate.timeIntervalSince1970 - requiredDate.timeIntervalSince1970 < self.oneDayInHours
         }
         return fractions
     }
