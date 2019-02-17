@@ -1,0 +1,33 @@
+{
+    "dt": 1549918800,
+    "main": {
+        "temp": 277.03,
+        "temp_min": 275.836,
+        "temp_max": 277.03,
+        "pressure": 1020.29,
+        "sea_level": 1039.22,
+        "grnd_level": 1020.29,
+        "humidity": 94,
+        "temp_kf": 1.19
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10n"
+        }
+    ],
+    "clouds": {
+        "all": 88
+    },
+    "wind": {
+        "speed": 4.61,
+        "deg": 197.001
+    },
+    "rain": {},
+    "sys": {
+        "pod": "n"
+    },
+    "dt_txt": "2019-02-11 21:00:00"
+}
