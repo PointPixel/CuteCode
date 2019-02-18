@@ -14,6 +14,8 @@
 		B8075B962213863A00523549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8075B942213863A00523549 /* LaunchScreen.storyboard */; };
 		B8075BA12213863A00523549 /* CuteCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8075BA02213863A00523549 /* CuteCodeTests.swift */; };
 		B8075BAC2213868F00523549 /* ExpressionsOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8075BAB2213868F00523549 /* ExpressionsOverlayView.swift */; };
+		B831E2ED221AFD1800313821 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B831E2E8221AFBBB00313821 /* AudioToolbox.framework */; };
+		B831E2F1221B11E300313821 /* Words.plist in Resources */ = {isa = PBXBuildFile; fileRef = B831E2F0221B11E300313821 /* Words.plist */; };
 		B86E75B22219427900F0963E /* ForecastNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E75B02219427900F0963E /* ForecastNetworkManager.swift */; };
 		B86E75B32219427900F0963E /* ForecastRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E75B12219427900F0963E /* ForecastRequest.swift */; };
 		B86E75B62219428500F0963E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86E75B42219428500F0963E /* Forecast.swift */; };
@@ -30,6 +32,13 @@
 		B86E75FE221A155800F0963E /* UIImage+Identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = B86E75FA221A155700F0963E /* UIImage+Identifier.m */; };
 		B86E75FF221A155800F0963E /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B86E75FD221A155800F0963E /* ScrollViewController.m */; };
 		B86E7602221A156E00F0963E /* PPInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B86E7601221A156E00F0963E /* PPInfiniteScrollView.m */; };
+		B8ED0DBC221AD0A3007EAD67 /* PPWordsearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED0DB5221AD0A3007EAD67 /* PPWordsearchViewController.m */; };
+		B8ED0DBD221AD0A3007EAD67 /* PPWordSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED0DB6221AD0A3007EAD67 /* PPWordSearchCell.m */; };
+		B8ED0DBE221AD0A3007EAD67 /* PPWordSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED0DB9221AD0A3007EAD67 /* PPWordSearch.m */; };
+		B8ED0DBF221AD0A3007EAD67 /* NSString+PPExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ED0DBB221AD0A3007EAD67 /* NSString+PPExtras.m */; };
+		B8ED0DC4221AF6CD007EAD67 /* tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8ED0DC1221AF6CD007EAD67 /* tick.mp3 */; };
+		B8ED0DC5221AF6CD007EAD67 /* ping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8ED0DC2221AF6CD007EAD67 /* ping.mp3 */; };
+		B8ED0DC6221AF6CD007EAD67 /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B8ED0DC3221AF6CD007EAD67 /* pop.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,8 @@
 		B8075BA02213863A00523549 /* CuteCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteCodeTests.swift; sourceTree = "<group>"; };
 		B8075BA22213863A00523549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8075BAB2213868F00523549 /* ExpressionsOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpressionsOverlayView.swift; path = CuteCode/ExpressionsOverlayView.swift; sourceTree = "<group>"; };
+		B831E2E8221AFBBB00313821 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B831E2F0221B11E300313821 /* Words.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Words.plist; sourceTree = "<group>"; };
 		B86E75B02219427900F0963E /* ForecastNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastNetworkManager.swift; sourceTree = "<group>"; };
 		B86E75B12219427900F0963E /* ForecastRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastRequest.swift; sourceTree = "<group>"; };
 		B86E75B42219428500F0963E /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
@@ -74,6 +85,17 @@
 		B86E75FD221A155800F0963E /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 		B86E7600221A156E00F0963E /* PPInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPInfiniteScrollView.h; sourceTree = "<group>"; };
 		B86E7601221A156E00F0963E /* PPInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPInfiniteScrollView.m; sourceTree = "<group>"; };
+		B8ED0DB4221AD0A2007EAD67 /* PPWordSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWordSearch.h; sourceTree = "<group>"; };
+		B8ED0DB5221AD0A3007EAD67 /* PPWordsearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWordsearchViewController.m; sourceTree = "<group>"; };
+		B8ED0DB6221AD0A3007EAD67 /* PPWordSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWordSearchCell.m; sourceTree = "<group>"; };
+		B8ED0DB7221AD0A3007EAD67 /* NSString+PPExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PPExtras.h"; sourceTree = "<group>"; };
+		B8ED0DB8221AD0A3007EAD67 /* PPWordsearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWordsearchViewController.h; sourceTree = "<group>"; };
+		B8ED0DB9221AD0A3007EAD67 /* PPWordSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPWordSearch.m; sourceTree = "<group>"; };
+		B8ED0DBA221AD0A3007EAD67 /* PPWordSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPWordSearchCell.h; sourceTree = "<group>"; };
+		B8ED0DBB221AD0A3007EAD67 /* NSString+PPExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PPExtras.m"; sourceTree = "<group>"; };
+		B8ED0DC1221AF6CD007EAD67 /* tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tick.mp3; sourceTree = "<group>"; };
+		B8ED0DC2221AF6CD007EAD67 /* ping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ping.mp3; sourceTree = "<group>"; };
+		B8ED0DC3221AF6CD007EAD67 /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B831E2ED221AFD1800313821 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +123,7 @@
 				B8075B8A2213863800523549 /* CuteCode */,
 				B8075B9F2213863A00523549 /* CuteCodeTests */,
 				B8075B892213863800523549 /* Products */,
+				B831E2E7221AFBBB00313821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +139,8 @@
 		B8075B8A2213863800523549 /* CuteCode */ = {
 			isa = PBXGroup;
 			children = (
+				B86E75F9221A155600F0963E /* CuteCode-Bridging-Header.h */,
+				B8ED0DB3221AD083007EAD67 /* WordSearch */,
 				B86E75F8221A14F400F0963E /* InfiniteScrollView */,
 				B86E75AA2218C89500F0963E /* PixelWeather */,
 				B86E75A92218C87D00F0963E /* Expressions */,
@@ -136,6 +162,14 @@
 				B8075BA22213863A00523549 /* Info.plist */,
 			);
 			path = CuteCodeTests;
+			sourceTree = "<group>";
+		};
+		B831E2E7221AFBBB00313821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B831E2E8221AFBBB00313821 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B86E75A92218C87D00F0963E /* Expressions */ = {
@@ -222,9 +256,35 @@
 				B86E75FA221A155700F0963E /* UIImage+Identifier.m */,
 				B86E75FC221A155700F0963E /* ScrollViewController.h */,
 				B86E75FD221A155800F0963E /* ScrollViewController.m */,
-				B86E75F9221A155600F0963E /* CuteCode-Bridging-Header.h */,
 			);
 			name = InfiniteScrollView;
+			sourceTree = "<group>";
+		};
+		B8ED0DB3221AD083007EAD67 /* WordSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED0DC0221AF634007EAD67 /* Resources */,
+				B8ED0DB7221AD0A3007EAD67 /* NSString+PPExtras.h */,
+				B8ED0DBB221AD0A3007EAD67 /* NSString+PPExtras.m */,
+				B8ED0DB4221AD0A2007EAD67 /* PPWordSearch.h */,
+				B8ED0DB9221AD0A3007EAD67 /* PPWordSearch.m */,
+				B8ED0DBA221AD0A3007EAD67 /* PPWordSearchCell.h */,
+				B8ED0DB6221AD0A3007EAD67 /* PPWordSearchCell.m */,
+				B8ED0DB8221AD0A3007EAD67 /* PPWordsearchViewController.h */,
+				B8ED0DB5221AD0A3007EAD67 /* PPWordsearchViewController.m */,
+				B831E2F0221B11E300313821 /* Words.plist */,
+			);
+			name = WordSearch;
+			sourceTree = "<group>";
+		};
+		B8ED0DC0221AF634007EAD67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED0DC2221AF6CD007EAD67 /* ping.mp3 */,
+				B8ED0DC3221AF6CD007EAD67 /* pop.mp3 */,
+				B8ED0DC1221AF6CD007EAD67 /* tick.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +369,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B831E2F1221B11E300313821 /* Words.plist in Resources */,
+				B8ED0DC6221AF6CD007EAD67 /* pop.mp3 in Resources */,
 				B8075B962213863A00523549 /* LaunchScreen.storyboard in Resources */,
+				B8ED0DC5221AF6CD007EAD67 /* ping.mp3 in Resources */,
+				B8ED0DC4221AF6CD007EAD67 /* tick.mp3 in Resources */,
 				B8075B932213863A00523549 /* Assets.xcassets in Resources */,
 				B8075B912213863800523549 /* Main.storyboard in Resources */,
 			);
@@ -336,16 +400,20 @@
 				B86E75FE221A155800F0963E /* UIImage+Identifier.m in Sources */,
 				B8075B8E2213863800523549 /* ExpressionsViewController.swift in Sources */,
 				B86E75B32219427900F0963E /* ForecastRequest.swift in Sources */,
+				B8ED0DBF221AD0A3007EAD67 /* NSString+PPExtras.m in Sources */,
 				B86E75B72219428500F0963E /* ForecastFraction.swift in Sources */,
+				B8ED0DBE221AD0A3007EAD67 /* PPWordSearch.m in Sources */,
 				B8075BAC2213868F00523549 /* ExpressionsOverlayView.swift in Sources */,
 				B86E75C822194E3600F0963E /* ForecastDayCollectionViewCell.swift in Sources */,
 				B86E75BD221942B200F0963E /* ForecastDateTableViewCell.swift in Sources */,
+				B8ED0DBC221AD0A3007EAD67 /* PPWordsearchViewController.m in Sources */,
 				B86E75CA22194FD100F0963E /* ForecastDayDataSource.swift in Sources */,
 				B86E7602221A156E00F0963E /* PPInfiniteScrollView.m in Sources */,
 				B8075B8C2213863800523549 /* AppDelegate.swift in Sources */,
 				B86E75B92219429100F0963E /* ForecastViewController.swift in Sources */,
 				B86E75B62219428500F0963E /* Forecast.swift in Sources */,
 				B86E75B22219427900F0963E /* ForecastNetworkManager.swift in Sources */,
+				B8ED0DBD221AD0A3007EAD67 /* PPWordSearchCell.m in Sources */,
 				B86E75BB221942A500F0963E /* ForecastDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

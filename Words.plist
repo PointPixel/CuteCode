@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Words</key>
+	<array>
+		<array>
+			<string>backward</string>
+			<string>paper</string>
+			<string>kilo</string>
+			<string>caught</string>
+			<string>hotel</string>
+			<string>loose</string>
+			<string>tested</string>
+			<string>always</string>
+		</array>
+		<array>
+			<string>employee</string>
+			<string>whole</string>
+			<string>odious</string>
+			<string>extreme</string>
+			<string>orange</string>
+			<string>liable</string>
+			<string>seed</string>
+			<string>flower</string>
+		</array>
+		<array>
+			<string>excerable</string>
+			<string>demented</string>
+			<string>revolving</string>
+			<string>retaliatory</string>
+			<string>wardenede</string>
+			<string>uncouth</string>
+			<string>astute</string>
+			<string>reprehensible</string>
+			<string>epiphany</string>
+		</array>
+	</array>
+</dict>
+</plist>

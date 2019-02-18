@@ -97,7 +97,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Mini Apps" id="kN8-3z-Ldo">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-expression-cell" textLabel="EdM-lJ-jmi" detailTextLabel="vjW-2E-ljY" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Cpq-En-jZq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-weather-cell" textLabel="EdM-lJ-jmi" detailTextLabel="vjW-2E-ljY" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Cpq-En-jZq">
                                         <rect key="frame" x="0.0" y="206" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cpq-En-jZq" id="gvG-x8-lkh">
@@ -122,6 +122,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="UrN-Y3-xH9" kind="show" id="ObS-0f-KGN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-word-search-cell" textLabel="1o7-22-dMM" detailTextLabel="rsr-zQ-bYy" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="jhq-YU-Oen">
+                                        <rect key="frame" x="0.0" y="266" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jhq-YU-Oen" id="1ki-aV-LXJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Word Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1o7-22-dMM">
+                                                    <rect key="frame" x="16" y="3" width="99" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Objective C Interactive word search UI with extensible logic and data interface to hook up to API." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rsr-zQ-bYy">
+                                                    <rect key="frame" x="16" y="26.5" width="276.5" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tdy-CB-zer" kind="show" id="SUE-xd-Z8g"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -213,6 +240,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-503" y="-662"/>
+        </scene>
+        <!--Word Search-->
+        <scene sceneID="85E-4T-uDE">
+            <objects>
+                <viewController title="Word Search" id="tdy-CB-zer" customClass="PPWordsearchViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOD-Xy-u3R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT9-oL-nFO">
+                                <rect key="frame" x="16" y="80" width="288" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl7-yE-8FW">
+                                <rect key="frame" x="16" y="368" width="288" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="c4B-yS-BXw"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="eJI-fQ-doZ">
+                                <rect key="frame" x="16" y="520" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="hCr-Hl-HqW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Easy"/>
+                                    <segment title="Intermediate"/>
+                                    <segment title="Hard"/>
+                                </segments>
+                                <connections>
+                                    <action selector="difficultyChanged:" destination="tdy-CB-zer" eventType="valueChanged" id="Ug4-W8-m2O"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RT9-oL-nFO" firstAttribute="top" secondItem="EYW-Lc-O4P" secondAttribute="top" constant="16" id="0BB-jO-yzD"/>
+                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="RT9-oL-nFO" secondAttribute="trailing" constant="16" id="370-po-6rV"/>
+                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="hl7-yE-8FW" secondAttribute="trailing" constant="16" id="4JL-LR-KMb"/>
+                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="bottom" secondItem="eJI-fQ-doZ" secondAttribute="bottom" constant="20" id="5pw-qz-zU9"/>
+                            <constraint firstItem="eJI-fQ-doZ" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="LWv-kt-ux2"/>
+                            <constraint firstItem="RT9-oL-nFO" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="TS4-j2-5tt"/>
+                            <constraint firstItem="hl7-yE-8FW" firstAttribute="top" secondItem="RT9-oL-nFO" secondAttribute="bottom" constant="8" id="a89-XA-sUy"/>
+                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="eJI-fQ-doZ" secondAttribute="trailing" constant="16" id="fuf-IO-zl8"/>
+                            <constraint firstItem="hl7-yE-8FW" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="g87-FP-m58"/>
+                            <constraint firstItem="eJI-fQ-doZ" firstAttribute="top" secondItem="hl7-yE-8FW" secondAttribute="bottom" constant="24" id="idO-DE-Tgy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EYW-Lc-O4P"/>
+                    </view>
+                    <connections>
+                        <outlet property="difficultySelector" destination="eJI-fQ-doZ" id="LUG-x5-NKq"/>
+                        <outlet property="grid" destination="RT9-oL-nFO" id="LIV-LP-XfV"/>
+                        <outlet property="words" destination="hl7-yE-8FW" id="z4h-Mr-DpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHD-Up-d4Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339.375" y="939.08450704225356"/>
         </scene>
         <!--Pixel Weather-->
         <scene sceneID="f5h-yB-oSU">
@@ -321,12 +409,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoL-Td-zMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-217.5" y="940.14084507042253"/>
+            <point key="canvasLocation" x="518" y="192"/>
         </scene>
-        <!--Scroll View Controller-->
+        <!--Infinite Scroll View-->
         <scene sceneID="hKh-3z-a58">
             <objects>
-                <viewController id="Tz9-kR-58T" customClass="ScrollViewController" sceneMemberID="viewController">
+                <viewController title="Infinite Scroll View" id="Tz9-kR-58T" customClass="ScrollViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KjR-qs-7ZO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -396,7 +484,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJy-uY-Eaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.625" y="167.95774647887325"/>
+            <point key="canvasLocation" x="519" y="-545"/>
         </scene>
     </scenes>
     <resources>
