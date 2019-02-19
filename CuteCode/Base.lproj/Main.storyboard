@@ -37,56 +37,64 @@
                         <sections>
                             <tableViewSection headerTitle="User Interface" id="AR8-98-BGO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-expression-cell" textLabel="3e3-hM-pMW" detailTextLabel="PQv-KF-6ca" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="U5J-UK-nqf">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-expression-cell" textLabel="3e3-hM-pMW" detailTextLabel="PQv-KF-6ca" imageView="6Ei-M6-gaU" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="U5J-UK-nqf">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U5J-UK-nqf" id="Xfq-8R-sxm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Expressions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3e3-hM-pMW">
-                                                    <rect key="frame" x="16" y="3" width="92" height="20.5"/>
+                                                    <rect key="frame" x="59" y="3" width="92" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PQv-KF-6ca">
-                                                    <rect key="frame" x="16" y="26.5" width="286.5" height="43"/>
+                                                    <rect key="frame" x="59" y="26.5" width="245" height="57.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Core Animated presentations of selection UI - non table/collection view for sequence of emojis or could be extended to any subclass of UIView.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="expressionsthumb" id="6Ei-M6-gaU">
+                                                    <rect key="frame" x="16" y="31" width="28" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="puZ-Mu-i3W"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-scrollview-cell" textLabel="WOz-d1-Mpf" detailTextLabel="HIQ-C8-oOu" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="Gt4-n0-dIA">
-                                        <rect key="frame" x="0.0" y="103" width="320" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-scrollview-cell" textLabel="WOz-d1-Mpf" detailTextLabel="HIQ-C8-oOu" imageView="Mt9-zB-Cy9" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="Gt4-n0-dIA">
+                                        <rect key="frame" x="0.0" y="118" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gt4-n0-dIA" id="nlu-Tl-oEX">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Infinite Scroll View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WOz-d1-Mpf">
-                                                    <rect key="frame" x="16" y="3" width="140.5" height="20.5"/>
+                                                    <rect key="frame" x="61" y="3" width="140.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HIQ-C8-oOu">
-                                                    <rect key="frame" x="16" y="26.5" width="279" height="43"/>
+                                                    <rect key="frame" x="61" y="26.5" width="235" height="57.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <string key="text">Scroll view that presents sequence of images infinitely and fades prev and next images as they get closer/further away from centre</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="infinitescrollviewthumb" id="Mt9-zB-Cy9">
+                                                    <rect key="frame" x="16" y="31" width="30" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -97,54 +105,62 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Mini Apps" id="kN8-3z-Ldo">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-weather-cell" textLabel="EdM-lJ-jmi" detailTextLabel="vjW-2E-ljY" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Cpq-En-jZq">
-                                        <rect key="frame" x="0.0" y="206" width="320" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-weather-cell" textLabel="EdM-lJ-jmi" detailTextLabel="vjW-2E-ljY" imageView="vWc-wP-y1W" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="Cpq-En-jZq">
+                                        <rect key="frame" x="0.0" y="236" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cpq-En-jZq" id="gvG-x8-lkh">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Pixel Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EdM-lJ-jmi">
-                                                    <rect key="frame" x="16" y="2" width="104.5" height="20.5"/>
+                                                    <rect key="frame" x="61" y="10" width="104.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Presentation of weather info and icons that is retreived from open weather api services." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vjW-2E-ljY">
-                                                    <rect key="frame" x="16" y="25.5" width="259.5" height="29"/>
+                                                    <rect key="frame" x="61" y="33.5" width="223" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="pixelweatherthumb" id="vWc-wP-y1W">
+                                                    <rect key="frame" x="16" y="31" width="30" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="UrN-Y3-xH9" kind="show" id="ObS-0f-KGN"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-word-search-cell" textLabel="1o7-22-dMM" detailTextLabel="rsr-zQ-bYy" rowHeight="75" style="IBUITableViewCellStyleSubtitle" id="jhq-YU-Oen">
-                                        <rect key="frame" x="0.0" y="266" width="320" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sample-word-search-cell" textLabel="1o7-22-dMM" detailTextLabel="rsr-zQ-bYy" imageView="N2i-kw-0v7" rowHeight="90" style="IBUITableViewCellStyleSubtitle" id="jhq-YU-Oen">
+                                        <rect key="frame" x="0.0" y="326" width="320" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jhq-YU-Oen" id="1ki-aV-LXJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Word Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1o7-22-dMM">
-                                                    <rect key="frame" x="16" y="3" width="99" height="20.5"/>
+                                                    <rect key="frame" x="61" y="10" width="99" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Objective C Interactive word search UI with extensible logic and data interface to hook up to API." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rsr-zQ-bYy">
-                                                    <rect key="frame" x="16" y="26.5" width="276.5" height="43"/>
+                                                    <rect key="frame" x="61" y="33.5" width="240" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="wordsearchthumb" id="N2i-kw-0v7">
+                                                    <rect key="frame" x="16" y="31" width="30" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
@@ -179,7 +195,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Te0-ez-UDt"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Circular Expressions" image="add-stoke-icon">
+                                <state key="normal" title="Circular Expressions" image="add-expression-icon">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -189,7 +205,7 @@
                                     <constraint firstAttribute="height" constant="34" id="GIj-hs-xZr"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Horizontal Expressions" image="add-stoke-icon">
+                                <state key="normal" title="Horizontal Expressions" image="add-expression-icon">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -199,7 +215,7 @@
                                     <constraint firstAttribute="height" constant="34" id="yxN-Jj-G5G"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Vertical Expressions" image="add-stoke-icon">
+                                <state key="normal" title="Vertical Expressions" image="add-expression-icon">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -250,10 +266,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT9-oL-nFO">
-                                <rect key="frame" x="16" y="80" width="288" height="280"/>
+                                <rect key="frame" x="20" y="80" width="280" height="280"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RT9-oL-nFO" secondAttribute="height" multiplier="1:1" id="V01-8Z-tL4"/>
+                                </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl7-yE-8FW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hl7-yE-8FW">
                                 <rect key="frame" x="16" y="368" width="288" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -280,11 +299,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="RT9-oL-nFO" firstAttribute="top" secondItem="EYW-Lc-O4P" secondAttribute="top" constant="16" id="0BB-jO-yzD"/>
-                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="RT9-oL-nFO" secondAttribute="trailing" constant="16" id="370-po-6rV"/>
+                            <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="RT9-oL-nFO" secondAttribute="trailing" constant="20" id="370-po-6rV"/>
                             <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="hl7-yE-8FW" secondAttribute="trailing" constant="16" id="4JL-LR-KMb"/>
                             <constraint firstItem="EYW-Lc-O4P" firstAttribute="bottom" secondItem="eJI-fQ-doZ" secondAttribute="bottom" constant="20" id="5pw-qz-zU9"/>
                             <constraint firstItem="eJI-fQ-doZ" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="LWv-kt-ux2"/>
-                            <constraint firstItem="RT9-oL-nFO" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="TS4-j2-5tt"/>
+                            <constraint firstItem="RT9-oL-nFO" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="20" id="TS4-j2-5tt"/>
                             <constraint firstItem="hl7-yE-8FW" firstAttribute="top" secondItem="RT9-oL-nFO" secondAttribute="bottom" constant="8" id="a89-XA-sUy"/>
                             <constraint firstItem="EYW-Lc-O4P" firstAttribute="trailing" secondItem="eJI-fQ-doZ" secondAttribute="trailing" constant="16" id="fuf-IO-zl8"/>
                             <constraint firstItem="hl7-yE-8FW" firstAttribute="leading" secondItem="EYW-Lc-O4P" secondAttribute="leading" constant="16" id="g87-FP-m58"/>
@@ -488,6 +507,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add-stoke-icon" width="30" height="30"/>
+        <image name="add-expression-icon" width="30" height="30"/>
+        <image name="expressionsthumb" width="27.666666030883789" height="26.666666030883789"/>
+        <image name="infinitescrollviewthumb" width="30" height="26.666666030883789"/>
+        <image name="pixelweatherthumb" width="30" height="26.666666030883789"/>
+        <image name="wordsearchthumb" width="30" height="26.666666030883789"/>
     </resources>
 </document>

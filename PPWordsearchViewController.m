@@ -78,7 +78,7 @@
 }
 
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewDidAppear:(BOOL)animated {
     UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
     recognizer.minimumPressDuration = 0;
     [self.grid addGestureRecognizer:recognizer];

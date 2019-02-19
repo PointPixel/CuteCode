@@ -42,6 +42,7 @@
     [self.scroller populateWithArrayOfImages:months];
     self.scroller.infiniteScrollViewDelegate = self;
     [self.scroller setShowsHorizontalScrollIndicator:NO];
+    self.scroller.contentOffset = CGPointMake(self.scroller.contentOffset.x + self.scrollerOverlay.frame.size.width / 2.0, self.scroller.contentOffset.y);
 }
 
 - (void)newCurrentItem:(NSString*)currentItem {
