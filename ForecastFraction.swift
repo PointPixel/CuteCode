@@ -85,7 +85,7 @@ struct ForecastFraction: Decodable {
     let main: Main
     let overview: [Overview]
     let wind: Wind
-    let rain: Rain
+    let rain: Rain?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: ForecastKeys.self)
@@ -98,7 +98,7 @@ struct ForecastFraction: Decodable {
         self.main = try container.decode(Main.self, forKey: .main)
         self.overview = try container.decode([Overview].self, forKey: .overview)
         self.wind = try container.decode(Wind.self, forKey: .wind)
-        self.rain = try container.decode(Rain.self, forKey: .rain)
+        self.rain = try container.decodeIfPresent(Rain.self, forKey: .rain)
     }
     
     enum ForecastKeys: String, CodingKey {

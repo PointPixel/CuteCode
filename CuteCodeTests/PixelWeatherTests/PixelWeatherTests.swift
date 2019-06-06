@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import WiproWeather
+@testable import CuteCode
 
 class WiproWeatherTests: XCTestCase {
 

@@ -12,7 +12,6 @@
 		B8075B912213863800523549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8075B8F2213863800523549 /* Main.storyboard */; };
 		B8075B932213863A00523549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8075B922213863A00523549 /* Assets.xcassets */; };
 		B8075B962213863A00523549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8075B942213863A00523549 /* LaunchScreen.storyboard */; };
-		B8075BA12213863A00523549 /* CuteCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8075BA02213863A00523549 /* CuteCodeTests.swift */; };
 		B8075BAC2213868F00523549 /* ExpressionsOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8075BAB2213868F00523549 /* ExpressionsOverlayView.swift */; };
 		B831E2ED221AFD1800313821 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B831E2E8221AFBBB00313821 /* AudioToolbox.framework */; };
 		B831E2F1221B11E300313821 /* Words.plist in Resources */ = {isa = PBXBuildFile; fileRef = B831E2F0221B11E300313821 /* Words.plist */; };
@@ -60,7 +59,6 @@
 		B8075B952213863A00523549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8075B972213863A00523549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = CuteCode/Info.plist; sourceTree = "<group>"; };
 		B8075B9C2213863A00523549 /* CuteCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuteCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8075BA02213863A00523549 /* CuteCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuteCodeTests.swift; sourceTree = "<group>"; };
 		B8075BA22213863A00523549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8075BAB2213868F00523549 /* ExpressionsOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExpressionsOverlayView.swift; path = CuteCode/ExpressionsOverlayView.swift; sourceTree = "<group>"; };
 		B831E2E8221AFBBB00313821 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -158,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				B86E75AF2219426300F0963E /* PixelWeatherTests */,
-				B8075BA02213863A00523549 /* CuteCodeTests.swift */,
 				B8075BA22213863A00523549 /* Info.plist */,
 			);
 			path = CuteCodeTests;
@@ -422,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8075BA12213863A00523549 /* CuteCodeTests.swift in Sources */,
 				B86E75C6221942DA00F0963E /* PixelWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +626,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/expressions.app/expressions";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteCode.app/CuteCode";
 			};
 			name = Debug;
 		};
@@ -650,7 +646,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/expressions.app/expressions";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CuteCode.app/CuteCode";
 			};
 			name = Release;
 		};

@@ -194,7 +194,7 @@
 
     self.wordList = [[NSMutableArray alloc] initWithArray: arrayOfWords[self.difficultySelector.selectedSegmentIndex]];
 
-    PPWordSearch *puzzle = [[PPWordSearch alloc] initWithRows:rows andCols:cols withRandomCount:10 maxAttempts:8 maximumWords: 10];
+    PPWordSearch *puzzle = [[PPWordSearch alloc] initWithRows:rows andCols:cols withRandomCount:10 maxAttempts:15 maximumWords: 10];
 
     NSArray *puzzleRows = [puzzle generatePuzzleStringWithWords:self.wordList];
 

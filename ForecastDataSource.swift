@@ -26,7 +26,7 @@ class ForecastDataSource: NSObject, UITableViewDataSource {
     
     // MARK: Data loading
     func populateData() {
-        let glasgowCityId: String = "3333231"
+        let glasgowCityId: String = "2648579"
         let forecastRequest = ForecastRequest(cityId: glasgowCityId)
         
         forecastRequest?.loadForecast(success: { (forecast) in

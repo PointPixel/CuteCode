@@ -10,5 +10,13 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "closure #1 in NetworkManager.get&lt;A&gt;(urlString:successfulCodes:businessFailureCodes:completion:):ForecastNetworkManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "url">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>

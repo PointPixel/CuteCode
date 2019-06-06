@@ -13,7 +13,8 @@ import UIKit
 class ForecastViewController: UIViewController {
 
     @IBOutlet weak var forecastTableView: UITableView!
-    
+    @IBOutlet weak var messageLabel: UILabel!
+
     let forecastDataSource: ForecastDataSource = ForecastDataSource()
     
     // MARK: Lifecycle
@@ -33,12 +34,16 @@ class ForecastViewController: UIViewController {
 extension ForecastViewController: ForecastDataSourceUpdateable {
     func forecastDataDidUpdate() {
         DispatchQueue.main.async {
+            self.forecastTableView.isHidden = false
             self.forecastTableView.reloadData()
         }
     }
     
     func forecastDataDidError(message: String) {
-        //TODO: Add UI for presenting meaningful error messages to user.
+        DispatchQueue.main.async {
+            self.messageLabel.text = message
+            self.forecastTableView.isHidden = true
+        }
     }
     
 }

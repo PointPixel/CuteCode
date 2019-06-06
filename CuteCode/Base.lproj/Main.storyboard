@@ -329,6 +329,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Sz-sF-0BD">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2jo-oB-cl2">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -416,19 +423,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2jo-oB-cl2" firstAttribute="bottom" secondItem="Zgj-0N-aRn" secondAttribute="bottom" id="3S1-rQ-acl"/>
+                            <constraint firstItem="Zgj-0N-aRn" firstAttribute="trailing" secondItem="0Sz-sF-0BD" secondAttribute="trailing" id="4o2-0Y-dPI"/>
                             <constraint firstItem="2jo-oB-cl2" firstAttribute="trailing" secondItem="Zgj-0N-aRn" secondAttribute="trailing" id="JDj-DV-GwX"/>
                             <constraint firstItem="2jo-oB-cl2" firstAttribute="leading" secondItem="Zgj-0N-aRn" secondAttribute="leading" id="by1-w5-ffD"/>
                             <constraint firstItem="2jo-oB-cl2" firstAttribute="top" secondItem="Zgj-0N-aRn" secondAttribute="top" id="cvt-Kz-K3C"/>
+                            <constraint firstItem="0Sz-sF-0BD" firstAttribute="leading" secondItem="Zgj-0N-aRn" secondAttribute="leading" id="kg5-3a-qZK"/>
+                            <constraint firstItem="0Sz-sF-0BD" firstAttribute="top" secondItem="Zgj-0N-aRn" secondAttribute="top" id="puS-eW-clT"/>
+                            <constraint firstItem="Zgj-0N-aRn" firstAttribute="bottom" secondItem="0Sz-sF-0BD" secondAttribute="bottom" id="s9X-Ee-6Pr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zgj-0N-aRn"/>
                     </view>
                     <connections>
                         <outlet property="forecastTableView" destination="2jo-oB-cl2" id="rua-h9-6MM"/>
+                        <outlet property="messageLabel" destination="0Sz-sF-0BD" id="OIB-Pi-xEr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AoL-Td-zMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="518" y="192"/>
+            <point key="canvasLocation" x="517.5" y="191.19718309859155"/>
         </scene>
         <!--Infinite Scroll View-->
         <scene sceneID="hKh-3z-a58">
